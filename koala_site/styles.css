@@ -1,0 +1,140 @@
+/* External CSS for Koala Bear National Information Center */
+
+/* Body background using color name */
+body {
+    background-color: lightcyan;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* H1 styling with hex codes */
+h1 {
+    background-color: #333333;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* H2 styling as descendant selector inside main section, using HSL */
+main section h2 {
+    color: hsl(120, 60%, 25%);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Grouped selector for paragraphs and list items using RGB */
+p, li {
+    line-height: 1.6;
+    color: rgb(80, 80, 80);
+}
+
+/* Descendant selector for strong text inside paragraphs */
+section p strong {
+    font-weight: bold;
+    color: #B22222;
+}
+
+/* Independent class for pseudo-element first-letter */
+.first-letter::first-letter {
+    font-size: 2em;
+    color: #00008B;
+    font-weight: bold;
+}
+
+/* Independent and dependent classes */
+.highlight {
+    background-color: yellow;
+    padding: 2px;
+}
+section .highlight {
+    background-color: lightyellow;
+}
+
+/* Ordered and unordered list styles */
+ol {
+    list-style-type: upper-roman;
+    margin-left: 20px;
+}
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+/* Challenge: use a small image as list-style-image for unordered lists with .gif-list */
+ul.gif-list {
+    list-style-image: url('images/leaf-1-24.png');
+    list-style-position: inside;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+}
+nav a:link {
+    color: #333333;
+}
+nav a:visited {
+    color: #666666;
+}
+nav a:hover,
+nav a:focus {
+    background-color: #FFD700;
+    color: #333333;
+    border-radius: 5px;
+}
+nav a:active {
+    color: #CC8400;
+}
+
+/* Navigation bar background */
+nav {
+    background-color: #f0e68c;
+    padding: 10px 0;
+}
+
+/* Images styling */
+section img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Classes for rounding images */
+.rounded {
+    border-radius: 15px;
+    border: 2px solid #ccc;
+}
+.rounded.small {
+    width: 150px;
+}
+
+/* Global hyperlink pseudo-classes */
+a:link {
+    color: #0066cc;
+}
+a:visited {
+    color: #551a8b;
+}
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+a:active {
+    color: #cc0000;
+} 
