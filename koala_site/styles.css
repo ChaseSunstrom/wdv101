@@ -137,4 +137,49 @@ a:hover {
 }
 a:active {
     color: #cc0000;
+}
+
+/* Global image styling */
+img {
+  margin: 10px;
+  border: 2px solid #ccc;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Float utility classes */
+.float-left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.float-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+/* Heading styles */
+h3, h4 {
+  margin: 15px 0;
+  padding: 5px;
+  border-top: 2px solid #000;
+}
+
+/* General element spacing */
+p, ul, nav, section, header, footer {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Header and footer image overrides */
+header img {
+  width: 100%;
+  height: auto;
+  border: none;
+  margin: 0;
+}
+footer img {
+  height: 50px;
+  width: auto;
+  border: none;
+  margin: 0;
 } 
