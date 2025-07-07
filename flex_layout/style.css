@@ -1,0 +1,68 @@
+/* 3-Column Flexbox Layout Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.container {
+  width: 75%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+header, nav, main, footer {
+  padding: 20px;
+  margin: 10px 0;
+}
+header {
+  background-color: #ffcc80;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.flex-mid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.flex-mid section {
+  flex: 1;
+  background-color: #ffe0b2;
+  border-radius: 8px;
+  text-align: center;
+}
+.flex-mid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+footer {
+  background-color: #ffcc80;
+  text-align: center;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .flex-mid {
+    flex-direction: column;
+  }
+  header {
+    background-color: #ffa726; /* change header color on mobile */
+  }
+} 
