@@ -10,52 +10,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="top">
-        <h1>Koala Bear National Information Center</h1>
-        <img src="images/koala_banner.jpg" alt="Koala Bear Banner" style="width: 100%; height: auto;">
-    </header>
+    <div class="container">
+        <header id="top">
+            <h1>Koala Bear National Information Center</h1>
+            <img src="images/koala_banner.jpg" alt="Koala Bear Banner" style="width: 100%; height: auto;">
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section>
-            <h1>Koala Photo Gallery</h1>
-            <p class="first-letter">Explore beautiful images of koalas in their natural Australian habitat.</p>
-            
-            <h2>Koala Photos</h2>
-            <!-- Note: Download free koala images from Unsplash.com and place them in the images folder -->
-            <!-- Suggested images: koala_sleeping.jpg, koala_eating.jpg, koala_family.jpg -->
-            
-            <img src="images/koala_sleeping.jpg" alt="Sleeping koala in eucalyptus tree" style="width: 300px; height: auto; margin: 10px;">
-            <img src="images/koala_eating.jpg" alt="Koala eating eucalyptus leaves" style="width: 300px; height: auto; margin: 10px;">
-            <img src="images/koala_family.jpg" alt="Mother koala with baby" style="width: 300px; height: auto; margin: 10px;">
-            
-            <h2>Koala Video</h2>
-            <p>Watch koalas in their natural habitat:</p>
-            <!-- Note: Download a free koala video from Pexels.com and place it in the images folder -->
-            <video width="400" height="300" controls>
-                <source src="images/koala_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p><em>Images courtesy of Unsplash.com - Free to use under the Unsplash License</em></p>
-            <p><em>Video courtesy of Pexels.com - Free to use</em></p>
-        </section>
-    </main>
+        <main>
+            <section>
+                <h1>Koala Photo Gallery</h1>
+                <p class="first-letter">Explore beautiful images of koalas in their natural Australian habitat.</p>
+                
+                <h2>Koala Photos</h2>
+                <!-- Note: Download free koala images from Unsplash.com and place them in the images folder -->
+                <!-- Suggested images: koala_sleeping.jpg, koala_eating.jpg, koala_family.jpg -->
+                
+                <div class="gallery">
+                    <img src="images/koala_sleeping.jpg" alt="Sleeping koala in eucalyptus tree" style="width: 300px; height: auto; margin: 10px;">
+                    <img src="images/koala_eating.jpg" alt="Koala eating eucalyptus leaves" style="width: 300px; height: auto; margin: 10px;">
+                    <img src="images/koala_family.jpg" alt="Mother koala with baby" style="width: 300px; height: auto; margin: 10px;">
+                </div>
+                
+                <h2>Koala Video</h2>
+                <p>Watch koalas in their natural habitat:</p>
+                <!-- Note: Download a free koala video from Pexels.com and place it in the images folder -->
+                <video width="400" height="300" controls>
+                    <source src="images/koala_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <p><em>Images courtesy of Unsplash.com - Free to use under the Unsplash License</em></p>
+                <p><em>Video courtesy of Pexels.com - Free to use</em></p>
+            </section>
+        </main>
 
-    <footer>
-        <p>Copyright 2018 All rights reserved. Australian Koala Foundation</p>
-        <img src="images/koala_logo.svg" alt="Australian Koala Foundation Logo" style="height: 50px;">
-        <p><a href="#top">Back to Top</a></p>
-    </footer>
+        <footer>
+            <p>Copyright 2018 All rights reserved. Australian Koala Foundation</p>
+            <img src="images/koala_logo.svg" alt="Australian Koala Foundation Logo" style="height: 50px;">
+            <p><a href="#top">Back to Top</a></p>
+        </footer>
+    </div>
 </body>
 </html> 
