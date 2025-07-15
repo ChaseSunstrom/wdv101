@@ -29,10 +29,17 @@
     <main>
         <section>
             <h1>Contact Us</h1>
-            <p class="first-letter" style="text-transform: uppercase; text-align: center; font-weight: bold;">We'd love to hear from you! Get in touch with the Koala Bear National Information Center for questions, donations, or volunteer opportunities.</p>
-            
-            <h2>Contact Information</h2>
-            <p><em>Coming soon</em> - Contact details and form will be available here.</p>
+            <form class="contact-form" method="post" action="form_response_basic.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 

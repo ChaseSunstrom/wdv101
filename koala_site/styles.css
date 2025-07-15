@@ -272,3 +272,64 @@ img {
         flex-direction: column;
     }
 } 
+
+/* Insert gallery figure and figcaption styles */
+.gallery figure {
+    flex: 1 0 calc(33.333% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.gallery figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    color: rgb(80, 80, 80);
+}
+@media screen and (max-width: 768px) {
+    .gallery figure {
+        flex: 1 0 100%;
+    }
+}
+
+/* Contact form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.contact-form button {
+    width: fit-content;
+    background-color: #333333;
+    color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.contact-form button:hover {
+    background-color: #555555;
+} 
