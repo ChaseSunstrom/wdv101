@@ -241,13 +241,15 @@ footer img {
     padding: 0 15px;
 }
 
-/* Semantic element styling */
+/* Semantic element styling (disabled for Bootstrap redesign) */
+/*
 header, nav, main, section, footer {
     margin: 20px 0;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
+*/
 
 /* Image responsiveness */
 img {
@@ -332,4 +334,68 @@ figcaption {
 }
 .contact-form button:hover {
     background-color: #555555;
+} 
+
+/* Adopt page specific flex styles */
+.adopt-intro .intro-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.adopt-intro .intro-flex p {
+    flex: 1 1 60%;
+}
+.adopt-intro .intro-flex img {
+    flex: 1 1 35%;
+    max-width: 300px;
+}
+.adopt-form-section .adopt-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.adopt-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.adopt-form legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+.adopt-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.adopt-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    margin: 5px;
+}
+.adopt-form .form-group input,
+.adopt-form .form-group select,
+.adopt-form .form-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+.adopt-form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.adopt-form button:hover {
+    background-color: #555;
 } 
